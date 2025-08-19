@@ -111,7 +111,6 @@ func main() {
 	}
 
 	for _, file := range sourceFiles {
-		fmt.Printf("source %s\n", file)
 		if _, err := bash.RunCommand(fmt.Sprintf("source %s", file)); err != nil {
 			panic(err)
 		}
